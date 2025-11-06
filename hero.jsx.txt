@@ -1,0 +1,16 @@
+export default function Hero({ title, subtitle, image, isCorporate }) {
+  return (
+    <section className={`w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 ${isCorporate ? 'bg-gray-100' : 'bg-wetklinBlue/10'}`}>
+      <div className="md:w-1/2 space-y-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-800">{title}</h1>
+        <p className="text-lg md:text-xl text-gray-600">{subtitle}</p>
+        <button className="mt-4 bg-wetklinBlue text-white px-6 py-3 rounded-full shadow-md hover:bg-wetklinBlue/80 transition uppercase font-semibold">
+          Order Now for Free Delivery
+        </button>
+      </div>
+      <div className="md:w-1/2 mt-6 md:mt-0">
+        <img src={image} alt="Wetklin laundry service" className="rounded-2xl shadow-md w-full object-cover" />
+      </div>
+    </section>
+  );
+}
