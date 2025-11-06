@@ -1,0 +1,29 @@
+import Hero from "../../components/Hero";
+import Services from "../../components/Services";
+import WhyChoose from "../../components/WhyChoose";
+import Gallery from "../../components/Gallery";
+import Contact from "../../components/Contact";
+import Footer from "../../components/Footer";
+import WhatsAppButton from "../../components/WhatsAppButton";
+
+export default function Corporate() {
+  return (
+    <main className="flex flex-col items-center justify-center">
+      <Hero
+        title="Wetklin provides consistent, high-standard fabric care for your business"
+        subtitle="Partner with Wetklin for trusted corporate laundry solutions"
+        image="/images/corporate-image.jpg"
+        isCorporate={true}
+      />
+      <Services />
+      <WhyChoose />
+      <Gallery />
+      <Contact />
+      <Footer />
+      <WhatsAppButton
+        phone="+6282112760094"
+        message="Hello Wetklin, I would like to discuss laundry partnership opportunities."
+      />
+    </main>
+  );
+}

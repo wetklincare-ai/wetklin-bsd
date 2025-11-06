@@ -1,0 +1,16 @@
+import "./globals.css";
+
+export const metadata = {
+  title: "Wetklin Laundry Care – Premium Fabric Care",
+  description: "Experience premium care for every fabric with Wetklin Laundry Care.",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body className="bg-wetklinGray text-gray-800 font-sans">
+        {children}
+      </body>
+    </html>
+  );
+}

@@ -1,19 +1,19 @@
-import Hero from "../../components/Hero";
-import Services from "../../components/Services";
-import WhyChoose from "../../components/WhyChoose";
-import Gallery from "../../components/Gallery";
-import Contact from "../../components/Contact";
-import Footer from "../../components/Footer";
-import WhatsAppButton from "../../components/WhatsAppButton";
+import Hero from "../components/Hero";
+import Services from "../components/Services";
+import WhyChoose from "../components/WhyChoose";
+import Gallery from "../components/Gallery";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsAppButton";
 
-export default function Corporate() {
+export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
       <Hero
-        title="Wetklin provides consistent, high-standard fabric care for your business"
-        subtitle="Partner with Wetklin for trusted corporate laundry solutions"
-        image="/images/corporate-image.jpg"
-        isCorporate={true}
+        title="Experience Premium Care for Every Fabric"
+        subtitle="Book your laundry today – get free pickup"
+        image="/images/puffer-jacket.jpg"
+        isCorporate={false}
       />
       <Services />
       <WhyChoose />
@@ -22,7 +22,7 @@ export default function Corporate() {
       <Footer />
       <WhatsAppButton
         phone="+6282112760094"
-        message="Hello Wetklin, I would like to discuss laundry partnership opportunities."
+        message="Hello Wetklin, I’d like to book my laundry. Is free pickup available today?"
       />
     </main>
   );
